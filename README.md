@@ -16,10 +16,10 @@ Using the service provided
 ```c#
 using entityservice;
 
-# returns maximum product of an integer array
+// returns maximum product of an integer array
 entityservice.Calcs calcs = new entityservice.Calcs();
 
-# returns (int, int, int) => (product, firstValue, secondValue)
+// returns (int, int, int) => (product, firstValue, secondValue)
 int[] numbersArr = {6,7,2,1};
 int multipleOf = 3;
 (int, int, int) result = calcs.GetMaximumProductMultiple(numbersArr, multipleOf);
