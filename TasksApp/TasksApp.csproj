@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\entityservice\entityservice.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\usr2\local\lib\papx\bin\Release\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\..\..\..\usr2\local\lib\papx\bin\Release\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\..\..\..\usr2\local\lib\papx\bin\Release\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
