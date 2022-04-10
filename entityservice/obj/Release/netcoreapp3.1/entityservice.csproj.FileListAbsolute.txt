@@ -1,0 +1,10 @@
+C:\home\local\01. projects\TasksApp\entityservice\bin\Release\netcoreapp3.1\entityservice.deps.json
+C:\home\local\01. projects\TasksApp\entityservice\bin\Release\netcoreapp3.1\entityservice.dll
+C:\home\local\01. projects\TasksApp\entityservice\bin\Release\netcoreapp3.1\entityservice.pdb
+C:\home\local\01. projects\TasksApp\entityservice\obj\Release\netcoreapp3.1\entityservice.GeneratedMSBuildEditorConfig.editorconfig
+C:\home\local\01. projects\TasksApp\entityservice\obj\Release\netcoreapp3.1\entityservice.AssemblyInfoInputs.cache
+C:\home\local\01. projects\TasksApp\entityservice\obj\Release\netcoreapp3.1\entityservice.AssemblyInfo.cs
+C:\home\local\01. projects\TasksApp\entityservice\obj\Release\netcoreapp3.1\entityservice.csproj.CoreCompileInputs.cache
+C:\home\local\01. projects\TasksApp\entityservice\obj\Release\netcoreapp3.1\entityservice.dll
+C:\home\local\01. projects\TasksApp\entityservice\obj\Release\netcoreapp3.1\entityservice.pdb
+C:\home\local\01. projects\TasksApp\entityservice\obj\Release\netcoreapp3.1\entityservice.csproj.AssemblyReference.cache
