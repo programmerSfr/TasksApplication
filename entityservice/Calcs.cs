@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 /// <summary>
 /// Entityservice layer
@@ -36,6 +38,41 @@ namespace entityservice
             }
 
             return (-1, -1, -1);
+        }
+
+        /// <summary>
+        /// Method to get the maximum product between two integers in an array multiple of some integer - Linear way
+        /// </summary>
+        /// <param name="arr">Array with the numbers to calculate</param>
+        /// <param name="multipleOf">Integer that the product should be multiple of</param>
+        /// <returns></returns>
+        public (int, int, int) GetMaximumProductMultipleLinear(int[] arr, int multipleOf)
+        {
+            if (arr == null || multipleOf < 0 || arr.Length < 2)
+                return (-1, -1, -1);
+
+            Array.Sort(arr);
+            Array.Reverse(arr);
+
+            int[] multiples = arr.Where(n => IsMultipleOf(n, multipleOf)).ToArray();
+            if(multiples.Length > 0)
+            {
+                Array.Sort(multiples);
+                Array.Reverse(multiples);
+
+                if (multiples[0] != arr[0])
+                {
+                    int prod = GetProductMultiple(multiples[0], arr[0], multipleOf);
+                    return (prod, multiples[0], arr[0]);
+                }
+                else
+                {
+                    int prod = GetProductMultiple(multiples[0], arr[1], multipleOf);
+                    return (prod, multiples[0], arr[1]);
+                }
+            }
+            else
+                return (-1, -1, -1);
         }
 
         /// <summary>
