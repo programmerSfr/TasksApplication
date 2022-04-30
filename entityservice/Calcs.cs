@@ -76,6 +76,39 @@ namespace entityservice
         }
 
         /// <summary>
+        /// Method to get the maximum product between two integers in an array multiple of some integer - simple way
+        /// </summary>
+        /// <param name="arr">Array with the numbers to calculate</param>
+        /// <param name="multipleOf">Integer that the product should be multiple of</param>
+        /// <returns></returns>
+        public (int, int, int) GetMaximumProductMultipleSimple(int[] arr, int multipleOf)
+        {
+            if (arr == null || multipleOf < 0 || arr.Length < 2)
+                return (-1, -1, -1);
+
+            int maxMultiple = -1;
+            int max = -1;
+
+            for(int i = 0; i < arr.Length; i++)
+            {
+                int current = arr[i];
+                if (IsMultipleOf(current, multipleOf) && current > maxMultiple)
+                    maxMultiple = current;
+
+                if (current > max)
+                    max = current;
+            }
+
+            if (max > 0 && maxMultiple > 0)
+            {
+                int prod = max * maxMultiple;
+                return (prod, maxMultiple, max);
+            }
+
+            return (-1, -1, -1);
+        }
+
+        /// <summary>
         /// Gets the product from any two numbers if it is multiple of another number
         /// </summary>
         /// <param name="x">First number</param>
